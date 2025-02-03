@@ -47,19 +47,18 @@
             border-collapse: collapse;
         }
 
-        td {
-            border: 1px solid #333;
-            padding: 10px;
-            vertical-align: top;
-            text-align: center;
-        }
+       td {
+    text-align: center; /* Centra il contenuto orizzontalmente */
+    vertical-align: middle; /* Centra il contenuto verticalmente */
+}
 
-        td img {
-            width: 100%;
-            height: auto;
-            max-width: 350px;
-            border-radius: 5px;
-        }
+td img {
+    display: block;
+    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+    max-width: 100%; /* Impedisce che l'immagine sia più grande della colonna */
+    height: auto; /* Mantiene le proporzioni */
+}
+
 
         td h2 {
             font-size: 1.5em;
