@@ -1,116 +1,37 @@
-<!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spaghetti Hacker - Blog</title>
-    <!-- Aggiungo il font Fixedsys da Google Fonts -->
-    <style>
-        /* Font Fixedsys per uno stile terminale */
-        @import url('https://fonts.googleapis.com/css2?family=Fixedsys&display=swap');
-        
-        body {
-            font-family: 'Fixedsys', monospace; /* Font tipo terminale */
-            background-color: #333; /* Sfondo nero */
-            color: #00FF00; /* Testo verde */
-            margin: 0;
-            padding: 0;
-            height: 120vh;
-            text-align: center;
-            display: flex; /* Usa Flexbox */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra orizzontalmente */
-            
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1280px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            font-weight: normal;
-            text-align: center;
-            
-        }
-
-        p {
-            font-size: 1.4em;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-
-        .cta-button:hover {
-            background-color: #45a049;
-        }
-
-    table {
-    width: 100%; /* Assicura che la tabella occupi tutta la larghezza disponibile */
-    table-layout: fixed; /* Fissa la dimensione delle colonne */
-    border-collapse: collapse; /* Evita spazi tra i bordi delle celle */
-}
-
-td, th {
-    text-align: center; /* Allinea il testo al centro */
-    vertical-align: middle; /* Centra verticalmente */
-}
-
-/* Definire larghezze specifiche per le colonne */
-.col-img {
-    width: 500px; /* Larghezza fissa per la colonna immagine */
-    max-width: 500px;
-    background-color: #222 !important;
-}
-
-.col-title {
-    width: 500px; /* Larghezza fissa per il titolo */
-    max-width: 500px;
-    background-color: #222;
-    font-weight: normal;
-    text-align: center;   
-    display: flex; /* Usa Flexbox */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra orizzontalmente */
-}
-
-
-    </style>
+<title>Spaghetti Hacker</title>
+<meta charset="utf-8">
+<style>
+    body {
+      color: #00FFFF;
+      background-color: #0c0d10;
+      margin: 0 auto;
+      padding: 1em 0 1em 0;
+    }
+@font-face { font-family: "gohu"; src: url("gohu.woff") format('woff'); }
+       pre { font-family: "gohu", "Lucida Console", monospace, Monaco; font-size: 14px; line-height: 1.0; }
+         a { color: #00FFFF; text-decoration: none; }
+</style>
 </head>
 <body>
+<center><div style="display: inline-block; text-align: left;"><pre>
+                                                            ┌───────────────────────┐
+                                                            ▄   ▄ ▄▄▄▄▄ ▄▄▄▄▄       │
+                                                            █   █ █     █           │
+                                                            █▀▀▀█ █     █▀▀▀▀       │
+                                                            █   █ █▄▄▄▄ █           │
+┌───────────────────────────────────────────────────────────                        │
+│ Spaghetti Hacker Volume 1 - Febbraio 2025                 │                       │
+│                                     CONTENTS              └───────────────────────┘
+│                                                                                  │ 
+│ 1.0  <a href="0.html">Intro</a> ................................................................. hcf │
+│ 1.1  <a href="1.html">NO_ELF</a> ................................................... Malware Analysis │
+│ 1.2  <a href="2.html">Unknown Utility</a> ....................................... Reverse Engineering │
+│ 1.3  <a href="3.html">Dirty Cow</a> ............................................. Reverse Engineering │ 
+│                                                                                  │ 
+└──────────────────────────────────────────────────────────────────────────────────┘ 
 
-    <div class="container">
-        <!-- Introduzione principale -->
-        <h1>Spaghetti Hacker</h1>
-        <p>Questo è un blog personale di studio e approfondimento di tematiche acare; una spaghettata acara, aglio, olio, pepperoncino e tanto reverse engineering, memory corruption, binary exploitation, malware analysis, digital forensics e tutto ciò che riguarda il mondo low level.</p>
+  >> 
 
-        <!-- Tabella dei Post -->
-    <table>
-    <colgroup>
-        <col class="col-img">
-        <col class="col-title">
-    </colgroup>
-    <tr>
-        <!-- Colonna 1: Immagine -->
-        <td>
-            <a href="docs/reverse-engineering.html">
-                <img src="https://i.imgur.com/e9pKwpL.png" alt="Post 1" style="max-width: 100%;">
-            </a>
-        </td>
-
-        <!-- Colonna 2: Titolo -->
-        <td>
-            <p>NO_ELF; reverse engineering di un eseguibile ELF a 64 bit non "stripped", cioè con informazioni sui simboli.</p>
-        </td>
-
-        <!-- Colonna 3: Descrizione -->
-        
-    </tr>
-</table>
-
-    </div>
-
-</body>
-</html>
+</pre></div></center></body></html>
