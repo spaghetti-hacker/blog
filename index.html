@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Spaghetti Hacker - Blog</title>
-    <!-- Aggiungo il font Roboto da Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Aggiungo il font Fixedsys da Google Fonts -->
     <style>
+        /* Font Fixedsys per uno stile terminale */
+        @import url('https://fonts.googleapis.com/css2?family=Fixedsys&display=swap');
+        
         body {
-            font-family: 'Roboto', sans-serif; /* Font Roboto */
+            font-family: 'Fixedsys', monospace; /* Font tipo terminale */
             background-color: #000000; /* Sfondo nero */
             color: #00FF00; /* Testo verde */
             margin: 0;
@@ -40,7 +42,7 @@
         }
 
         .post {
-            background-color: #111;
+            background-color: #000000; /* Sfondo nero per i post */
             border: 1px solid #333;
             border-radius: 8px;
             padding: 20px;
@@ -87,21 +89,21 @@
         <div class="post">
             <h2>Post 1: Introduzione al Reverse Engineering</h2>
             <p>Il reverse engineering è una delle discipline più affascinanti nel mondo della sicurezza. In questo post esploreremo i concetti base e come iniziare con il disassemblaggio di un programma...</p>
-            <a href="#" class="cta-button">Leggi di più</a>
+            <a href="docs/reverse-engineering.html" class="cta-button">Read More</a>
         </div>
 
         <!-- Sezione Post 2 -->
         <div class="post">
             <h2>Post 2: Memory Corruption Exploits</h2>
             <p>La corruzione di memoria è uno degli attacchi più pericolosi. In questo articolo analizzeremo le tecniche più comuni per sfruttare questi vulnerabilità e come difendersi...</p>
-            <a href="#" class="cta-button">Leggi di più</a>
+            <a href="docs/memory-corruption.html" class="cta-button">Read More</a>
         </div>
 
         <!-- Sezione Post 3 -->
         <div class="post">
             <h2>Post 3: Malware Analysis: Cosa Devi Sapere</h2>
             <p>L'analisi del malware è una competenza fondamentale per chi lavora nella sicurezza informatica. Scopriamo come smontare e analizzare un file sospetto per capirne il comportamento...</p>
-            <a href="#" class="cta-button">Leggi di più</a>
+            <a href="docs/malware-analysis.html" class="cta-button">Read More</a>
         </div>
     </div>
 
