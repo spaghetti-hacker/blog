@@ -7,88 +7,74 @@
     <title>Spaghetti Hacker - Blog</title>
     <!-- Aggiungo il font Fixedsys da Google Fonts -->
     <style>
-        /* Font Fixedsys per uno stile terminale */
-        @import url('https://fonts.googleapis.com/css2?family=Fixedsys&display=swap');
-        
-        body {
-            font-family: 'Fixedsys', monospace; /* Font tipo terminale */
-            background-color: #000000; /* Sfondo nero */
-            color: #00FF00; /* Testo verde */
-            margin: 0;
-            padding: 0;
-            height: 120vh;
-            text-align: center;
-            display: flex; /* Usa Flexbox */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra orizzontalmente */
-        }
+    /* Font Fixedsys per uno stile terminale */
+@import url('https://fonts.googleapis.com/css2?family=Fixedsys&display=swap');
 
-        .container {
-            width: 100%;
-            max-width: 1280px;
-            padding: 20px;
-        }
+body {
+    font-family: 'Fixedsys', monospace; /* Font tipo terminale */
+    background-color: #000000; /* Sfondo nero */
+    color: #00FF00; /* Testo verde */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-weight: normal;
-            text-align: center;
-            
-        }
+/* Wrapper per centrare senza perdere il colore di sfondo */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
 
-        p {
-            font-size: 1.4em;
-            line-height: 1.6;
-            margin: 20px 0;
-            text-align: center;
-        }
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px;
+}
 
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: center;
+}
 
-        .cta-button:hover {
-            background-color: #45a049;
-        }
+p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: center;
+}
 
-    table {
+table {
     width: 100%; /* Assicura che la tabella occupi tutta la larghezza disponibile */
     table-layout: fixed; /* Fissa la dimensione delle colonne */
     border-collapse: collapse; /* Evita spazi tra i bordi delle celle */
 }
 
 td, th {
-    text-align: left; /* Allinea il testo al centro */
+    text-align: center; /* Centra il testo */
     vertical-align: middle; /* Centra verticalmente */
+    background-color: #222; /* Mantiene il colore di sfondo */
+    height: 500px; /* Imposta un'altezza uniforme */
 }
 
 /* Definire larghezze specifiche per le colonne */
 .col-img {
     width: 500px; /* Larghezza fissa per la colonna immagine */
     max-width: 500px;
-    background-color: #222 !important;
-}
-
-.col-title2 {
-    width: 500px; /* Larghezza fissa */
-    max-width: 500px;
-    background-color: #222 !important;
-    font-weight: normal;
-    text-align: center;
-    display: flex; /* Usa Flexbox */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra orizzontalmente */
-    padding: 20px; /* Aggiunge un po' di spazio attorno al testo */
-    height: 500px; /* Imposta la stessa altezza dell'immagine */
 }
 
 .col-title {
     width: 500px; /* Larghezza fissa per il titolo */
     max-width: 500px;
-    background-color: #222;
     font-weight: normal;
-    display: flex; /* Usa Flexbox */
-    text-align: center;
+    display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra orizzontalmente */
+    padding: 20px;
 }
 
 
@@ -96,36 +82,31 @@ td, th {
 </head>
 <body>
 
+   <div class="wrapper">
     <div class="container">
-        <!-- Introduzione principale -->
         <h1>Spaghetti Hacker</h1>
-        <p>Questo è un blog personale di studio e approfondimento di tematiche acare; una spaghettata acara, aglio, olio, pepperoncino e tanto reverse engineering, memory corruption, binary exploitation, malware analysis, digital forensics e tutto ciò che riguarda il mondo low level.</p>
+        <p>Questo è un blog personale di studio e approfondimento di tematiche acare...</p>
 
-        <!-- Tabella dei Post -->
-    <table>
-    <colgroup>
-        <col class="col-img">
-        <col class="col-title">
-    </colgroup>
-    <tr>
-        <!-- Colonna 1: Immagine -->
-        <td>
-            <a href="docs/reverse-engineering.html">
-                <img src="https://i.imgur.com/e9pKwpL.png" alt="Post 1" style="max-width: 100%;">
-            </a>
-        </td>
+        <table>
+            <tr>
+                <!-- Colonna 1: Immagine -->
+                <td class="col-img">
+                    <img src="URL_IMMAGINE" alt="Post Image" width="500" height="500">
+                </td>
 
-        <!-- Colonna 2: Titolo -->
-        <td>
-            <p>NO_ELF; reverse engineering di un eseguibile ELF a 64 bit non "stripped", cioè con informazioni sui simboli.</p>
-        </td>
+                <!-- Colonna 2: Titolo -->
+                <td class="col-title">
+                    <h2>NO_ELF</h2>
+                </td>
 
-        <!-- Colonna 3: Descrizione -->
-        
-    </tr>
-</table>
-
+                <!-- Colonna 3: Descrizione -->
+                <td class="col-title">
+                    <p>Reverse engineering di un eseguibile ELF a 64 bit non "stripped", con informazioni sui simboli.</p>
+                </td>
+            </tr>
+        </table>
     </div>
+</div>
 
 </body>
 </html>
