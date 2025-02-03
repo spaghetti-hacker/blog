@@ -41,22 +41,29 @@
             margin: 20px 0;
         }
 
-        .post {
+      .post {
             background-color: #000000; /* Sfondo nero per i post */
             border: 1px solid #333;
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between; /* Dividere il contenuto in due colonne */
+            align-items: center; /* Centrato verticalmente */
         }
 
         .post h2 {
             font-size: 2.2em;
             color: #00FF00;
+            margin: 0;
+            flex: 1; /* Prende spazio nella colonna di sinistra */
         }
 
         .post p {
             font-size: 1.4em;
             color: #99FF99;
+            margin: 0;
+            flex: 2; /* Prende più spazio nella colonna di destra */
         }
 
         /* Aggiungo uno stile per il pulsante */
