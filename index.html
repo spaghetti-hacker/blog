@@ -8,7 +8,7 @@
     <!-- Aggiungo il font Fixedsys da Google Fonts -->
     <style>
         /* Font Fixedsys per uno stile terminale */
-        @import url('https://fonts.googleapis.com/css?family=Fixedsys&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fixedsys&display=swap');
         
         body {
             font-family: 'Fixedsys', monospace; /* Font tipo terminale */
@@ -26,8 +26,8 @@
 
         .container {
             width: 100%;
-            max-width: 1440px;
-            padding: 120px;
+            max-width: 1200px;
+            padding: 20px;
         }
 
         h1 {
@@ -41,33 +41,38 @@
             margin: 20px 0;
         }
 
-      .post {
-            background-color: #000000; /* Sfondo nero per i post */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        td {
             border: 1px solid #333;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between; /* Dividere il contenuto in due colonne */
-            align-items: left; /* Centrato verticalmente */
+            padding: 10px;
+            vertical-align: top;
+            text-align: center;
         }
 
-        .post h2 {
-            font-size: 1.4em;
+        td img {
+            width: 100%;
+            height: auto;
+            max-width: 150px;
+            border-radius: 5px;
+        }
+
+        td h2 {
+            font-size: 1.5em;
             color: #00FF00;
-            margin: 0;
-            flex: 1; /* Prende spazio nella colonna di sinistra */
-            align-items: left; /* Centrato verticalmente */
+            margin: 10px 0;
         }
 
-        .post p {
+        td p {
             font-size: 1.4em;
             color: #99FF99;
-            margin: 0;
-            flex: 2; /* Prende più spazio nella colonna di destra */
+            margin-bottom: 10px;
         }
 
-        /* Aggiungo uno stile per il pulsante */
         .cta-button {
             padding: 10px 20px;
             background-color: #000000;
@@ -77,12 +82,12 @@
             cursor: pointer;
             font-size: 1.2em;
             text-decoration: none;
-            margin-top: 10px;
         }
 
         .cta-button:hover {
             background-color: #45a049;
         }
+
     </style>
 </head>
 <body>
@@ -92,26 +97,75 @@
         <h1>Spaghetti Hacker</h1>
         <p>Questo è un blog personale di studio e approfondimento di tematiche acare; una spaghettata acara, aglio, olio, pepperoncino e tanto reverse engineering, memory corruption, binary exploitation, malware analysis, digital forensics e tutto ciò che riguarda il mondo low level.</p>
 
-        <!-- Sezione Post 1 -->
-        <div class="post">
-            <h2>Post 1: Introduzione al Reverse Engineering</h2>
-            <p>Il reverse engineering è una delle discipline più affascinanti nel mondo della sicurezza. In questo post esploreremo i concetti base e come iniziare con il disassemblaggio di un programma...</p>
-            <a href="docs/reverse-engineering.html" class="cta-button">Read More</a>
-        </div>
+        <!-- Tabella dei Post -->
+        <table>
+            <!-- Righe della tabella -->
+            <tr>
+                <!-- Colonna 1: Immagine -->
+                <td>
+                    <img src="path_to_image1.jpg" alt="Post 1">
+                </td>
 
-        <!-- Sezione Post 2 -->
-        <div class="post">
-            <h2>Post 2: Memory Corruption Exploits</h2>
-            <p>La corruzione di memoria è uno degli attacchi più pericolosi. In questo articolo analizzeremo le tecniche più comuni per sfruttare questi vulnerabilità e come difendersi...</p>
-            <a href="docs/memory-corruption.html" class="cta-button">Read More</a>
-        </div>
+                <!-- Colonna 2: Titolo -->
+                <td>
+                    <h2>Post 1: Introduzione al Reverse Engineering</h2>
+                </td>
 
-        <!-- Sezione Post 3 -->
-        <div class="post">
-            <h2>Post 3: Malware Analysis: Cosa Devi Sapere</h2>
-            <p>L'analisi del malware è una competenza fondamentale per chi lavora nella sicurezza informatica. Scopriamo come smontare e analizzare un file sospetto per capirne il comportamento...</p>
-            <a href="docs/malware-analysis.html" class="cta-button">Read More</a>
-        </div>
+                <!-- Colonna 3: Descrizione -->
+                <td>
+                    <p>Il reverse engineering è una delle discipline più affascinanti nel mondo della sicurezza. In questo post esploreremo i concetti base e come iniziare con il disassemblaggio di un programma...</p>
+                </td>
+
+                <!-- Colonna 4: Pulsante "Read More" -->
+                <td>
+                    <a href="docs/reverse-engineering.html" class="cta-button">Read More</a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Colonna 1: Immagine -->
+                <td>
+                    <img src="path_to_image2.jpg" alt="Post 2">
+                </td>
+
+                <!-- Colonna 2: Titolo -->
+                <td>
+                    <h2>Post 2: Memory Corruption Exploits</h2>
+                </td>
+
+                <!-- Colonna 3: Descrizione -->
+                <td>
+                    <p>La corruzione di memoria è uno degli attacchi più pericolosi. In questo articolo analizzeremo le tecniche più comuni per sfruttare questi vulnerabilità e come difendersi...</p>
+                </td>
+
+                <!-- Colonna 4: Pulsante "Read More" -->
+                <td>
+                    <a href="docs/memory-corruption.html" class="cta-button">Read More</a>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Colonna 1: Immagine -->
+                <td>
+                    <img src="path_to_image3.jpg" alt="Post 3">
+                </td>
+
+                <!-- Colonna 2: Titolo -->
+                <td>
+                    <h2>Post 3: Malware Analysis: Cosa Devi Sapere</h2>
+                </td>
+
+                <!-- Colonna 3: Descrizione -->
+                <td>
+                    <p>L'analisi del malware è una competenza fondamentale per chi lavora nella sicurezza informatica. Scopriamo come smontare e analizzare un file sospetto per capirne il comportamento...</p>
+                </td>
+
+                <!-- Colonna 4: Pulsante "Read More" -->
+                <td>
+                    <a href="docs/malware-analysis.html" class="cta-button">Read More</a>
+                </td>
+            </tr>
+        </table>
     </div>
 
 </body>
