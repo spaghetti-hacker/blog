@@ -41,52 +41,40 @@
             margin: 20px 0;
         }
 
-        table {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse;
-        }
-
-       td {
-    text-align: center; /* Centra il contenuto orizzontalmente */
-    vertical-align: middle; /* Centra il contenuto verticalmente */
-}
-
-td img {
-    display: block;
-    margin: 0 auto; /* Centra l'immagine orizzontalmente */
-    max-width: 100%; /* Impedisce che l'immagine sia più grande della colonna */
-    background-color: #00FF00;
-    height: auto; /* Mantiene le proporzioni */
-}
-
-
-        td h2 {
-            font-size: 1.5em;
-            color: #00FF00;
-            margin: 10px 0;
-        }
-
-        td p {
-            font-size: 1.4em;
-            color: #99FF99;
-            margin-bottom: 10px;
-        }
-
-        .cta-button {
-            padding: 10px 20px;
-            background-color: #000000;
-            color: #00FF00;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1.2em;
-            text-decoration: none;
-        }
 
         .cta-button:hover {
             background-color: #45a049;
         }
+
+    table {
+    width: 100%; /* Assicura che la tabella occupi tutta la larghezza disponibile */
+    table-layout: fixed; /* Fissa la dimensione delle colonne */
+    border-collapse: collapse; /* Evita spazi tra i bordi delle celle */
+}
+
+td, th {
+    border: 1px solid #ccc; /* Bordo sottile per la tabella */
+    padding: 10px; /* Distanza tra il testo e i bordi */
+    text-align: center; /* Allinea il testo al centro */
+    vertical-align: middle; /* Centra verticalmente */
+}
+
+/* Definire larghezze specifiche per le colonne */
+.col-img {
+    width: 20%; /* Larghezza fissa per la colonna immagine */
+}
+
+.col-title {
+    width: 25%; /* Larghezza fissa per il titolo */
+}
+
+.col-desc {
+    width: 40%; /* Larghezza fissa per la descrizione */
+}
+
+.col-btn {
+    width: 15%; /* Larghezza fissa per il pulsante */
+}
 
     </style>
 </head>
@@ -98,28 +86,38 @@ td img {
         <p>Questo è un blog personale di studio e approfondimento di tematiche acare; una spaghettata acara, aglio, olio, pepperoncino e tanto reverse engineering, memory corruption, binary exploitation, malware analysis, digital forensics e tutto ciò che riguarda il mondo low level.</p>
 
         <!-- Tabella dei Post -->
-        <table>
-            <!-- Righe della tabella -->
-            <tr>
-                <!-- Colonna 1: Immagine -->
-                <td>
-                    <a href="docs/reverse-engineering.html">
-                        <img src="https://i.imgur.com/4kRdZgX.png" alt="Post 1">
-                    </a>
-                </td>
+    <table>
+    <colgroup>
+        <col class="col-img">
+        <col class="col-title">
+        <col class="col-desc">
+        <col class="col-btn">
+    </colgroup>
+    <tr>
+        <!-- Colonna 1: Immagine -->
+        <td>
+            <a href="docs/reverse-engineering.html">
+                <img src="" alt="Post 1" style="max-width: 100%;">
+            </a>
+        </td>
 
-                <!-- Colonna 2: Titolo -->
-                
+        <!-- Colonna 2: Titolo -->
+        <td>
+            <h2>Post 1: Introduzione al Reverse Engineering</h2>
+        </td>
 
-                <!-- Colonna 3: Descrizione -->
-                <td>
-                    <p>Il reverse engineering è una delle discipline più affascinanti nel mondo della sicurezza. In questo post esploreremo i concetti base e come iniziare con il disassemblaggio di un programma...</p>
-                </td>
+        <!-- Colonna 3: Descrizione -->
+        <td>
+            <p>Il reverse engineering è una delle discipline più affascinanti nel mondo della sicurezza...</p>
+        </td>
 
-                <!-- Colonna 4: Pulsante "Read More" -->
-                
-            </tr>
-        </table>
+        <!-- Colonna 4: Pulsante "Read More" -->
+        <td>
+            <a href="docs/reverse-engineering.html" class="cta-button">Read More</a>
+        </td>
+    </tr>
+</table>
+
     </div>
 
 </body>
